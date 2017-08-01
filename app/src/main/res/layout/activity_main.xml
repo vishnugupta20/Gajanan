@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.vrgupta.gajanan.MainActivity">
+
+    <ViewFlipper
+        android:id="@+id/viewFlipper"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#FF8C00">
+    </ViewFlipper>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewFlipper"
+        android:text="Gajanan Mitra Mandal"
+        android:textAlignment="center"
+        android:textSize="100px"
+        android:id="@+id/mandalName"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mandalName"
+        android:text="Estd Date:20/07/2015"
+        android:textAlignment="center"
+        android:id="@+id/estd"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:layout_marginLeft="25px"
+        android:layout_marginRight="25px"
+        android:layout_marginBottom="25px"
+        android:layout_alignParentBottom="true"
+        android:text="Welcome"
+        android:onClick="welcomeButtonClicked"
+        android:id="@+id/button1"/>
+
+
+
+
+</RelativeLayout>
